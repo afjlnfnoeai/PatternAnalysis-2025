@@ -26,3 +26,11 @@ for i in types:
         img_name = file.replace("_superpixels.png", ".jpg")
         img_path = os.path.join(ea_type_data, img_name)
 
+        # image + mask, mask in grayscale & og in colour
+        mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
+        img = cv2.imread(img_path)
+
+        if img is None or mask is None:  # skip any missing files
+            print(f"Skipped {img_name}; image/mask not found in {i}")
+            continue  # handle crashing
+
