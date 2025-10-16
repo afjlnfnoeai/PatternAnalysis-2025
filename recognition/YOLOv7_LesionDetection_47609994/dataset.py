@@ -34,3 +34,7 @@ for i in types:
             print(f"Skipped {img_name}; image/mask not found in {i}")
             continue  # handle crashing
 
+        # find image size, lesion's contours
+        h, w = img.shape[:2]
+        contours, ignore = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
