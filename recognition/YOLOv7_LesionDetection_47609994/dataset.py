@@ -38,3 +38,27 @@ for i in types:
         h, w = img.shape[:2]
         contours, ignore = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
+        annotations = []
+
+        # bounding boxes
+        for c in contours:
+            bx, by, bw, bh = cv2.boundingRect(c)
+
+            # normalised coordinates for YOLO
+            x_center, y_center = ((bx + bw /2)/w), ((by + bh /2)/h)
+            width, height = (bw/w), (bh/h)
+
+            annotations.append(f"0 {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}")
+
+        # YOLO images file
+        dst_img_path = os.path.join(images_dir, img_name)
+        if not os.path.exists(dst_img_path):
+            os.rename(img_path, dst_img_path)
+
+        # YOLO label file
+        label_file = os.path.join(labels_dir, file.replace("_superpixels.png", ".txt"))
+        with open(label_file, "w") as f:  # all bounding boxes into new file
+            f.write("\n".join(annotations))
+
+    print(f"YOLO labels generated for {i} set")
+
