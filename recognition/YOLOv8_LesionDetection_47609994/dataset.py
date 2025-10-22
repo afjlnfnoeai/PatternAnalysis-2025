@@ -2,7 +2,7 @@
 import os
 import cv2
 
-dataset = "/Users/suyi/Desktop/3710/ISIC-2017"
+dataset = "/Users/suyi/Desktop/3710/ISIC-2017"  # path to dataset on local hardware
 
 # test, train, val respective folders
 types = ["test", "train", "val"]
