@@ -42,6 +42,11 @@ Python libraries and their respective versions required have been placed into th
     ultralytics-thop==2.0.17
 
 ### Reproducibility
+
+Firstly, download the ISIC 2017 dataset from the link provided below if needed:
+
+<https://challenge.isic-archive.com/data/#2017>
+
 Once this repository has been cloned or downloaded, install dependencies by running:
     
     pip install -r requirements.txt
