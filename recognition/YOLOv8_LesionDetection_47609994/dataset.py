@@ -58,5 +58,5 @@ for i in types:
         with open(label_file, "w") as f:  # all bounding boxes into new file
             f.write("\n".join(annotations))
 
-    print(f"YOLO labels generated for {i} set")
+    print(f"labels generated for {i}")
 
