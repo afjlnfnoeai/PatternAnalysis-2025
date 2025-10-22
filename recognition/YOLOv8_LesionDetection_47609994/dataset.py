@@ -42,7 +42,7 @@ for i in types:
         for c in contours:
             bx, by, bw, bh = cv2.boundingRect(c)
 
-            # normalised coordinates for YOLO
+            # normalised coordinates according to YOLO standards
             x_center, y_center = ((bx + bw /2)/w), ((by + bh /2)/h)
             width, height = (bw/w), (bh/h)
 
