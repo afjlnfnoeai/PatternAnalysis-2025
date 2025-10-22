@@ -5,9 +5,7 @@ import cv2
 dataset = "/Users/suyi/Desktop/3710/ISIC-2017"
 
 # test, train, val respective folders
-types = ["ISIC-2017_Test_v2_Data",
-         "ISIC-2017_Training_Data",
-         "ISIC-2017_Validation_Data"]
+types = ["test", "train", "val"]
 
 for i in types:
     ea_type_data = os.path.join(dataset, i)
