@@ -14,8 +14,8 @@ In a YOLO model, the input image is passed through the CNN's backbone. This step
 
 ## Data Pre-processing
 
-### Processing data for compatibility with YOLOv7
-Each raw image and its corresponding mask is read. Subsequently, the regions where the lesions are located are extracted from these masks. These regions are then converted into bounding boxes and feature scaling occurs whereby coordinates are normalised. From these steps, we derive the YOLO-format labels (as of required of the algorithm) for each image which are saved as .txt files. An additional step of organising the file structure into images and labels separately was implemented. This was done so that I do not get confused when handling the data in later parts.
+### Processing data for compatibility with YOLOv8
+Each raw image and its corresponding mask is read. Subsequently, the regions where the lesions are located are extracted from these masks. These regions are then converted into bounding boxes and feature scaling occurs whereby coordinates are normalised. From these steps, we derive the YOLO-format labels (as of required of the algorithm) for each image which are saved as .txt files. An additional step of organising the file structure into images and labels separately was implemented. This was done to prevent confusion when handling the data in later parts.
 
 ### Training, Validation, Testing splits
 The dataset provided already came with the training, validation, and testing splits of the data. I followed these splits as such.
