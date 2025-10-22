@@ -22,4 +22,38 @@ The dataset provided already came with the training, validation, and testing spl
 
 ---
 
+## Dependencies and Reproducibility
+
+### Dependencies
+Python libraries and their respective versions required have been placed into the "requirements.txt" file. For reference, the dependencies are also listed below.
+    
+    matplotlib==3.10.7
+    numpy==2.2.6
+    opencv-python==4.12.0.88
+    PyYAML==6.0.3
+    requests==2.32.5
+    scipy==1.15.3
+    torch==2.9.0
+    torchvision==0.24.0
+    ultralytics==8.3.218
+    ultralytics-thop==2.0.17
+
+### Reproducibility
+Once this repository has been cloned or downloaded, install dependencies by running:
+    
+    pip install -r requirements.txt
+
+After all dependencies have been installed, run "dataset.py" just once to process the data. Once the data has been processed, run "train.py" to train, validate, test, and save the model.
+
+Training parameters are as follows:
+
+    data="/Users/suyi/Desktop/3710/ISIC-2017/isic2017.yaml",  # or replace with path to .yaml file
+    epochs=num_epochs,  # number of training epochs
+    imgsz=640,  # image size
+    batch=8,
+    name="lesion_detector",  # name of run to be saved 
+    project="runs/train",  # name of folder to be saved
+    verbose=True
+
+
 
