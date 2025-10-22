@@ -21,7 +21,7 @@ The figure below presents a simple diagram of YOLOv8's architecture and algorith
 Firstly, each raw image and its corresponding mask is read. Subsequently, the regions where the lesions are located are extracted from these masks. These regions are then converted into bounding boxes and feature scaling occurs whereby coordinates are normalised. From these steps, we derive the YOLO-format labels (as of required of the algorithm) for each image which are saved as .txt files. An additional step of organising the file structure into images and labels separately was implemented. This was done to prevent confusion when handling the data in later parts.
 
 ### Training, Validation, Testing splits
-The dataset provided already came with the training, validation, and testing splits of the data. I followed these splits as such.
+The dataset provided already came with the training, validation, and testing splits of the data. I followed these splits as such. The dataset used in this project is the ISIC 2017 dataset. For the downloading of this dataset, the link will be provided under the "Dependencies and Reproducibility" section.
 
 ---
 
