@@ -30,7 +30,7 @@ for i in types:
 
         if img is None or mask is None:  # skip any missing files
             print(f"Skipped {img_name}; image/mask not found in {i}")
-            continue  # handle crashing
+            continue  # make sure don't crashing
 
         # find image size, lesion's contours
         h, w = img.shape[:2]
