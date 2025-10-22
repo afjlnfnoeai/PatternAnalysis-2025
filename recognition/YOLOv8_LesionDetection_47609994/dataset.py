@@ -12,7 +12,7 @@ for i in types:
 
     images_dir = os.path.join(ea_type_data, "images")  # create sub-folders
     labels_dir = os.path.join(ea_type_data, "labels")
-    os.makedirs(images_dir, exist_ok=True)  # handle crashing
+    os.makedirs(images_dir, exist_ok=True)  # make sure don't crash
     os.makedirs(labels_dir, exist_ok=True)
 
     for file in os.listdir(ea_type_data):
