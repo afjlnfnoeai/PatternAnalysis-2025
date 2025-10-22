@@ -1,4 +1,4 @@
-# Recognition Task 5: Lesions Detection with YOLOv7
+# Recognition Task 5: Lesions Detection with YOLOv8
 
 ---
 
