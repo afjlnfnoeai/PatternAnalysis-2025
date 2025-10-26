@@ -27,6 +27,45 @@ def train_and_val(num_epochs):
     metrics = model.val()
     print(metrics)  # get accuracy score etc
 
+def test(training_path):
+    """
+    finds most recent trained model, evaluate on test split
+
+    Args:
+        training_path (str): path to saved trained files in project
+    """
+
+    # get most recent training fun
+    training_folders = sorted(glob.glob(os.path.join(training_path, "*")),
+                         key=os.path.getmtime,
+                         reverse=True)
+
+    if not training_folders:
+        print("no training runs yet")
+        return
+
+    # get model just trained
+    latest = training_folders[0]
+    best_model = os.path.join(latest, "weights", "best.pt")
+
+    if not os.path.exists(best_model):
+        print("not found")
+        return
+
+    print(f"latest trained model loaded from {best_model}")
+
+    # eval on test split
+    model = load_model(best_model)
+    results = model.val(
+        data="/Users/suyi/Desktop/3710/ISIC-2017/isic2017.yaml",
+        split="test",
+        imgsz=640,
+        batch=8,
+        verbose=True
+    )
+
+    print(results)
+
 
 if __name__ == "__main__":
     train_and_val(20)
