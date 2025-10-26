@@ -4,6 +4,8 @@
 # losses and metrics plotted during training
 
 from modules import load_model
+import os
+import glob
 
 def train_and_val(num_epochs):
     """
