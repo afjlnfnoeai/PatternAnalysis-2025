@@ -69,3 +69,4 @@ def test(training_path):
 
 if __name__ == "__main__":
     train_and_val(20)
+    test("runs/train")
