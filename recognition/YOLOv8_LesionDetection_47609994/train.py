@@ -13,6 +13,7 @@ def train_and_val(num_epochs):
     """
 
     # load YOLOv8 with pre-trained weights
+    # assignment sheet stated that pre-trained mod els are allowed
     model = load_model("/Users/suyi/Desktop/3710/yolov8n.pt")  # using: yolov8n.pt
 
     # training
