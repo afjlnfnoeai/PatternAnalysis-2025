@@ -9,7 +9,7 @@ def load_model(path):
         path (str): path to file from ultralytics Git
     """
     try:
-        model = YOLO(path)
+        model = YOLO(path)  # assignment sheet stated that pre-trained models are allowed
         return model
     except ModuleNotFoundError:
         print("Failed to load model")
