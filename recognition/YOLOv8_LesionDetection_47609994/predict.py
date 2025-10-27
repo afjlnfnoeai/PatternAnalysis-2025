@@ -28,3 +28,35 @@ def load_latest_model():
     # get model
     return load_model(best_model)
 
+def predict_image(model_to_use, source_path):
+    """
+    get predictions using latest model, display and save results
+
+    Args:
+        model_to_use: loaded model from load_latest_model(), or another model
+        source_path: path to folder or image to predict
+    """
+
+    if model_to_use is None:
+        return
+
+    # run predictions
+    results = model_to_use.predict(source=source_path,
+                                   imgsz=640,
+                                   conf=0.25,
+                                   save=True,
+                                   show=False,  # TRUE TO OPEN WINDOW WITH IMAGE
+                                   project="runs/predict",
+                                   name="lesion_predictions")
+
+    for r in results:
+        print("\nImage:", r.path)
+        boxes = r.boxes
+        if boxes is not None and len(boxes) > 0:
+            for box in boxes:
+                cls_id = int(box.cls)
+                conf = float(box.conf)
+                xyxy = box.xyxy[0].tolist()
+                print(f" - Class: {model_to_use.names[cls_id]}, Confidence: {conf:.2f}, Box: {xyxy}")
+        else:
+            print("no lesions detected")
