@@ -64,7 +64,8 @@ def test(training_path):
         split="test",
         imgsz=640,
         batch=8,
-        verbose=True
+        verbose=True,
+        iou = 0.8  # question wants all detections iou >= 0.8
     )
 
     print(results)
