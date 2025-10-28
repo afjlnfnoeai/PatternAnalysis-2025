@@ -1,4 +1,5 @@
 # data loader for loading and preprocessing data
+# TO BE JUST RUN ONCE TO PROCESS DATA
 import os
 import cv2
 
