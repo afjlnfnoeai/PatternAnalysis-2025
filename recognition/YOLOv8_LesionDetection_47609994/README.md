@@ -68,7 +68,48 @@ Training parameters are as follows:
 ## Results
 
 ### Model training and validation
-The model was trained over 50 epochs on the training data split and validated after each epoch. Validation losses and metrics were computed. The respective plots for box loss, class loss, Distribution Focal Loss (DFL), the precision metric of bounding box detections, recall, the mean average precision at an Intersection over Union (IoU) threshold of 0.50, and the mean average precision at a varying IoU threshold of 0.50 to 0.95 are presented below.
+The model was trained over 50 epochs on the training data split and validated after each epoch. Validation losses and metrics were computed. The respective plots for box loss, class loss, Distribution Focal Loss (DFL), the precision metric of bounding box detections, recall, the mean average precision (mAP) at an Intersection over Union (IoU) threshold of 0.50, and the mAP at a varying IoU threshold of 0.50 to 0.95 are presented below.
+
+![alt text](pics_for_readme/results.png)
+
+Pertaining to the box loss, class loss, and DFL loss plots of both the training and validation run, all losses are decreasing together. There are no signs of the model overfitting. Our model's average precision at 50% IoU and 50% to 90% IoU in detecting lesions is exceptionally high. 
+
+As for real-time performance, the YOLOv8 model's precision is very high in the sense whereby it avoids false positive bounding box detections very well. In other words, out of all the predicted bounding boxes, many were indeed true positives and actually contained lesions. In addition, the YOLOv8 model has a high recall. This means that the model performs well in identifying all true positives while minimising false negatives.
+
+### Performance on the test split
+
+The YOLOv8 model managed a fitness score of 0.994 (3 decimal places) which is defined as a weighted score that combines the validation metrics such as precision, recall, and mAP into a single score. With this high of a fitness score, the model detects lesions extremely well. Before testing, overfitting was definitely a worry since the model was performing so well but this was ruled out since the model also performed very well on the test data. 
+
+The plots of the model's precision-recall curve, F1-confidence curve, precision-confidence curve, and recall-confidence curve on the test split are presented below in order.
+
+![alt text](pics_for_readme/BoxPR_curve.png)
+
+As seen from the precision-recall plot above, the curve sticks to the top-right hand corner. This means that the model has both high precision and high recall levels at the same time. Then, the large area under this curve means that the YOLOv8 model used has a high average precision with false positives minimised. 
+
+![alt text](pics_for_readme/BoxF1_curve.png)
+
+F1-confidence plots work best for identifying the optimal confidence threshold where a model's level of precision and recall are well-balanced. In our context, as seen in the plot above, the YOLOv8 model well maintains a very good balance between levels of precision and recall. Only over a confidence level of 0.9 does the model's recall begin to drop and so does the F1 score. Overall, this means that the YOLOv8 model is performing well.
+
+![alt text](pics_for_readme/BoxP_curve.png)
+
+In the precision-confidence curve above, the model's precision increases as confidence increases. This means that the YOLOv8 model performs well at avoiding false positives.
+
+![alt text](pics_for_readme/BoxR_curve.png)
+
+Lastly, in the recall-confidence curve above, the model's recall only starts to decrease near a confidence level of over 0.9. This ties it all together and shows that the YOLOv8 model is indeed performing extremely well in detecting lesions as there usually exists a trade-off between a model's level of recall and confidence. 
+
+Next, the pictures presented below show the validation batch labels and the validation batch predictions respectively. It can be seen that both show the exact same bounding boxes in the same positions. This means that the YOLOv8 model's predictions perfectly match the labeled images, which is consistent with the rest of our findings thus far.
+
+![alt text](pics_for_readme/val_batch0_labels.jpg)
+
+![alt text](pics_for_readme/val_batch0_pred.jpg)
+
+From the results from the training and validation phase, all the plots given above, as well as the batch labels and predictions, it can be concluded that the YOLOv8 model is highly accurate in detecting lesions, even on unseen data. There is no evidence of the model overfitting. The YOLOv8 model simply performs extremely well in its task of lesion detection.
+
+## Example Inputs and Outputs
+
+
+
 
 
 
