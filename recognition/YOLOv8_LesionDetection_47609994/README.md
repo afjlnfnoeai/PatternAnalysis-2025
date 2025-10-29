@@ -56,12 +56,19 @@ After all dependencies have been installed, run "dataset.py" just once to proces
 Training parameters are as follows:
 
     data="/Users/suyi/Desktop/3710/ISIC-2017/isic2017.yaml",  # or replace with path to .yaml file
-    epochs=num_epochs,  # number of training epochs
-    imgsz=640,  # image size
-    batch=8,
-    name="lesion_detector",  # name of run to be saved 
-    project="runs/train",  # name of folder to be saved
-    verbose=True
+    epochs=num_epochs,                                        # number of training epochs
+    imgsz=640,                                                # image size
+    batch=8,                                                  # number of batches
+    name="lesion_detector",                                   # name of run to be saved 
+    project="runs/train",                                     # name of folder to be saved
+    verbose=True                                              # True for printed detailed info as model progresses
+
+---
+
+## Results
+
+### Model training and validation
+The model was trained over 50 epochs on the training data split and validated after each epoch. Validation losses and metrics were computed. The respective plots for box loss, class loss, Distribution Focal Loss (DFL), the precision metric of bounding box detections, recall, the mean average precision at an Intersection over Union (IoU) threshold of 0.50, and the mean average precision at a varying IoU threshold of 0.50 to 0.95 are presented below.
 
 
 
