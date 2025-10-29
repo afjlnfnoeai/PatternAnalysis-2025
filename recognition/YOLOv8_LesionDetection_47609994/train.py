@@ -65,6 +65,7 @@ def test(training_path):
         imgsz=640,
         batch=8,
         verbose=True,
+        project="runs/vals",
         iou = 0.8  # question wants all detections iou >= 0.8
     )
 
