@@ -57,6 +57,9 @@ def predict_image(model_to_use, source_path):
                 cls_id = int(box.cls)
                 conf = float(box.conf)
                 xyxy = box.xyxy[0].tolist()
-                print(f" - Class: {model_to_use.names[cls_id]}, Confidence: {conf:.2f}, Box: {xyxy}")
+                
+                print(f"class: {model_to_use.names[cls_id]}")
+                print(f"confidence: {conf:.2f}")
+                print(f"box: {xyxy}")
         else:
             print("no lesions detected")
