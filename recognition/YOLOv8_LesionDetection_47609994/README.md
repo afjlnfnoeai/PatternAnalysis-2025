@@ -12,7 +12,7 @@ In a YOLO model, the input image is passed through the CNN's backbone. This step
 
 The figure below presents a simple diagram of YOLOv8's architecture and algorithm.
 
-![alt text](yolov8_diagram.JPG)
+![alt text](pics_for_readme/yolov8_diagram.JPG)
 ---
 
 ## Data Pre-processing
