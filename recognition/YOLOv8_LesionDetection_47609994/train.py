@@ -73,5 +73,5 @@ def test(training_path):
 
 
 if __name__ == "__main__":
-    train_and_val(10)  # adjust accordingly to num of epochs u want
+    train_and_val(50)  # adjust accordingly to num of epochs u want
     test("runs/train")
