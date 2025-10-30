@@ -78,7 +78,7 @@ As for real-time performance, the YOLOv8 model's precision is very high in the s
 
 ### Performance on the test split
 
-The YOLOv8 model managed a fitness score of 0.994 (3 decimal places) which is defined as a weighted score that combines the validation metrics such as precision, recall, and mAP into a single score. With this high of a fitness score, the model detects lesions extremely well. Before testing, overfitting was definitely a worry since the model was performing so well but this was ruled out since the model also performed very well on the test data. 
+The YOLOv8 model managed a fitness score of 0.994 (3 decimal places) which is defined as a weighted score that combines the validation metrics such as precision, recall, and mAP into a single score. A minimum IoU of 0.8 for all lesion detections was enforced when testing. With this high of a fitness score, the model detects lesions extremely well. Before testing, overfitting was definitely a worry since the model was performing so well but this was ruled out since the model also performed very well on the test data. 
 
 The plots of the model's precision-recall curve, F1-confidence curve, precision-confidence curve, and recall-confidence curve on the test split are presented below in order.
 
