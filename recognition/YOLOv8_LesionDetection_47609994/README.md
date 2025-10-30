@@ -106,7 +106,7 @@ Next, the pictures presented below show the validation batch labels and the vali
 
 ![Validation Batch Labels](pics_for_readme/val_batch0_labels.jpg)
 
-![alt text](pics_for_readme/val_batch0_pred.jpg)
+![Validation Batch Predictions](pics_for_readme/val_batch0_pred.jpg)
 
 From the results from the training and validation phase, all the plots given above, as well as the batch labels and predictions, it can be concluded that the YOLOv8 model is highly accurate in detecting lesions, even on unseen data. The findings are all very good and do not, in any way, contradict one another. In addition, there is no evidence of the model overfitting. Thus, it can be concluded that the YOLOv8 model simply performs extremely well in its task of lesion detection.
 
