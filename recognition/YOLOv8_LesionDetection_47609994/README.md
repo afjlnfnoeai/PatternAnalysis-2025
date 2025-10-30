@@ -92,7 +92,7 @@ F1-confidence plots work best for identifying the optimal confidence threshold w
 
 ![alt text](pics_for_readme/BoxP_curve.png)
 
-In the precision-confidence curve above, the model's precision increases as confidence increases. This means that the YOLOv8 model performs well at avoiding false positives.
+In the precision-confidence curve above, the model's precision increases as confidence increases. The model's precision values remain extremely high (close or equal to 1.0) at all different thresholds. This means that the YOLOv8 model performs exceptionally well at avoiding false positives.
 
 ![alt text](pics_for_readme/BoxR_curve.png)
 
