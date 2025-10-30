@@ -90,7 +90,7 @@ The plots of the model's precision-recall curve, F1-confidence curve, precision-
 
 As seen from the precision-recall plot above, the curve sticks to the top-right hand corner. This means that the model has both high precision and high recall levels at the same time. This means that the model is performing extremely well because there usually exists a trade-off between precision and recall at varied thresholds. Then, the large area under this curve means that the YOLOv8 model used has a high average precision with false positives minimised. 
 
-![alt text](pics_for_readme/BoxF1_curve.png)
+![F1-Confidence Plot](pics_for_readme/BoxF1_curve.png)
 
 F1-confidence plots work best for identifying the optimal confidence threshold where a model's level of precision and recall are well-balanced. In our context, as seen in the plot above, the YOLOv8 model well maintains a very good balance between levels of precision and recall. The F1 score remains high across various thresholds. Only over a confidence level of 0.9 does the model's recall begin to drop and so does the F1 score. Overall, this means that the YOLOv8 model is performing well.
 
