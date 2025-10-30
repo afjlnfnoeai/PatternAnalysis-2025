@@ -106,7 +106,15 @@ Next, the pictures presented below show the validation batch labels and the vali
 
 From the results from the training and validation phase, all the plots given above, as well as the batch labels and predictions, it can be concluded that the YOLOv8 model is highly accurate in detecting lesions, even on unseen data. The findings are all very good and do not, in any way, contradict one another. In addition, there is no evidence of the model overfitting. Thus, it can be concluded that the YOLOv8 model simply performs extremely well in its task of lesion detection.
 
-## Example Inputs and Outputs
+### Example Inputs and Outputs
+
+In predict.py, the model can be fed a single input image or a folder of images. This can be adjusted at the bottom of the predict.py file as such:
+
+    predict_image(model, source_path)  # change source path accordingly to input image(s)
+
+For the sake of this report, the following examples will show single input images and their respective outputs. If the model does not detect any lesions in the input image, the terminal console will print "no lesions detected". Otherwise, the results of the prediction will be saved under a "runs/predict" directory. The class name (lesion), the bounding box coordinates, and the confidence of the model that the bounding box contains a lesion will also be printed in the terminal console. 
+
+The following shows an example input image fed into the trained YOLOv8 model, along with the predicted output made by the model.
 
 
 
