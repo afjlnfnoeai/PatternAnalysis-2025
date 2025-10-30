@@ -23,7 +23,7 @@ def train_and_val(num_epochs):
         imgsz=640,
         batch=8,
         name="lesion_detector",  # name of run
-        project="runs/train",
+        project="runs/train",  # will create folder if it doesn't yet exist
         verbose=True
     )
 
