@@ -119,6 +119,16 @@ The following shows an example input image fed into the trained YOLOv8 model, al
 ![alt text](pics_for_readme/ISIC_0015485 copy.jpg)
 ![alt text](pics_for_readme/ISIC_0015485.jpg)
 
+In addition, the following results were printed in the terminal console after running predict.py:
+
+        class: lesion
+        confidence: 0.99
+        box: [0.0, 7.995407581329346, 6648.0, 4437.119140625]
+        done predicting
+
+This means that the already trained YOLOv8 model detected a lesion in the input image with a confidence of 99%, with the bounding box coordinates for where the lesion was found in the input image given by [0.0, 7.9954, 6648.0, 4437.1].
+
+The following shows another example input image fed into the same trained YOLOv8 model, along with the predicted output made by the model.
 
 
 
