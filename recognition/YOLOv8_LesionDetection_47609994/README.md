@@ -130,7 +130,7 @@ This means that the already trained YOLOv8 model detected a lesion in the input 
 
 The following shows another example input image fed into the same trained YOLOv8 model, along with the predicted output made by the model.
 
-![alt text](pics_for_readme/ISIC_0015963 copy.jpg)
+![alt text](pics_for_readme/ISIC_0015963_copy.jpg)
 ![alt text](pics_for_readme/ISIC_0015963.jpg)
 
 The following results were printed in the terminal console after running predict.py:
