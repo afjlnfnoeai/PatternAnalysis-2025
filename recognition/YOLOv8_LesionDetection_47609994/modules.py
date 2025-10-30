@@ -11,7 +11,7 @@ def load_model(path):
     try:
         model = YOLO(path)  # assignment sheet stated that pre-trained models are allowed
         return model
-    except ModuleNotFoundError:
+    except ModuleNotFoundError:  # handle crashing if cannot load model
         print("Failed to load model")
         return None
 
