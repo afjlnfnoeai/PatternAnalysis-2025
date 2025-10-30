@@ -53,7 +53,7 @@ def predict_image(model_to_use, source_path):
     for r in results:
         print("\nImage:", r.path)
         boxes = r.boxes
-        if boxes is not None and len(boxes) > 0:
+        if boxes is not None and len(boxes) > 0:  # if got lesion detected then loop over ea pred bounding box
             for box in boxes:
                 cls_id = int(box.cls)
                 conf = float(box.conf)
