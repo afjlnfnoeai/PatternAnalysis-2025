@@ -84,7 +84,7 @@ The plots of the model's precision-recall curve, F1-confidence curve, precision-
 
 ![alt text](pics_for_readme/BoxPR_curve.png)
 
-As seen from the precision-recall plot above, the curve sticks to the top-right hand corner. This means that the model has both high precision and high recall levels at the same time. Then, the large area under this curve means that the YOLOv8 model used has a high average precision with false positives minimised. 
+As seen from the precision-recall plot above, the curve sticks to the top-right hand corner. This means that the model has both high precision and high recall levels at the same time. This means that the model is performing extremely well because there usually exists a trade-off between precision and recall at varied thresholds. Then, the large area under this curve means that the YOLOv8 model used has a high average precision with false positives minimised. 
 
 ![alt text](pics_for_readme/BoxF1_curve.png)
 
