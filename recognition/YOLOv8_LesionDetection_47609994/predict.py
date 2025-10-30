@@ -59,7 +59,7 @@ def predict_image(model_to_use, source_path):
                 conf = float(box.conf)
                 xyxy = box.xyxy[0].tolist()
                 
-                print(f"class: {model_to_use.names[cls_id]}")
+                print("class: lesion")
                 print(f"confidence: {conf:.2f}")
                 print(f"box: {xyxy}")
         else:
