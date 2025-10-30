@@ -49,6 +49,7 @@ def predict_image(model_to_use, source_path):
                                    project="runs/predict",
                                    name="lesion_predictions")
 
+    # for all predictions, access to get image and detected bounding box to get class, conf, coords
     for r in results:
         print("\nImage:", r.path)
         boxes = r.boxes
