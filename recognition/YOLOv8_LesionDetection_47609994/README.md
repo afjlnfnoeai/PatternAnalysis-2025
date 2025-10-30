@@ -68,7 +68,7 @@ Training parameters are as follows:
 ## Results
 
 ### Model training and validation
-The model was trained over 50 epochs on the training data split and validated after each epoch. Validation losses and metrics were computed. The respective plots for box loss, class loss, Distribution Focal Loss (DFL), the precision metric of bounding box detections, recall, the mean average precision (mAP) at an Intersection over Union (IoU) threshold of 0.50, and the mAP at a varying IoU threshold of 0.50 to 0.95 are presented below.
+The model was trained over 50 epochs on the training data split of the ISIC-2017 dataset and validated on the validation split after each epoch. During training, the YOLOv8 model finds the optimal object detection loss. These are namely bounding box regression loss, classification loss, and Distribution Focal Loss (DFL). Such losses are minimised by the model to improve accuracy of predicted coordinates and bounding boxes' precision. For each epoch, validation metrics were computed by the YOLOv8 model. These are: the precision metric of bounding box detections, recall, the mean average precision (mAP) at an Intersection over Union (IoU) threshold of 0.50, and the mAP at a varying IoU threshold of 0.50 to 0.95. These denote the proportion of true positives and the mean performance of the YOLOv8 model across varying IoU thresholds. The plots for all these metrics over 50 epochs are presented below.
 
 ![alt text](pics_for_readme/results.png)
 
