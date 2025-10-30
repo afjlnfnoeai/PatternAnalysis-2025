@@ -72,7 +72,7 @@ The model was trained over 50 epochs on the training data split of the ISIC-2017
 
 ![alt text](pics_for_readme/results.png)
 
-Pertaining to the box loss, class loss, and DFL loss plots of both the training and validation run, all losses are decreasing together. There are no signs of the model overfitting. Our model's average precision at 50% IoU and 50% to 90% IoU in detecting lesions is exceptionally high. 
+Pertaining to the box loss, class loss, and DFL loss plots of both the training and validation run, all losses are decreasing together. There are no signs of the model overfitting. Our model's average precision at 50% IoU and 50% to 90% IoU in detecting lesions is exceptionally high. These suggest that the YOLOv8 model maintained high accuracy across varied IoU thresholds while minimising its losses.
 
 As for real-time performance, the YOLOv8 model's precision is very high in the sense whereby it avoids false positive bounding box detections very well. In other words, out of all the predicted bounding boxes, many were indeed true positives and actually contained lesions. In addition, the YOLOv8 model has a high recall. This means that the model performs well in identifying all true positives while minimising false negatives.
 
