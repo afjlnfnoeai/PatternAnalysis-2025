@@ -9,7 +9,7 @@ def test_driver():
     """
     model = load_latest_model()
     if model is None:
-        print("no trained model, try after training")
+        print("no trained model, try after training")  # make sure don't crash if no training runs made yet
         return
 
     # evaluate on test set
