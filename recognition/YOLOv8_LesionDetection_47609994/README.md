@@ -86,7 +86,7 @@ The YOLOv8 model managed a fitness score of 0.994 (3 decimal places) which is de
 
 The plots of the model's precision-recall curve, F1-confidence curve, precision-confidence curve, and recall-confidence curve on the test split are presented below in order.
 
-![alt text](pics_for_readme/BoxPR_curve.png)
+![Precision-Recall Plot](pics_for_readme/BoxPR_curve.png)
 
 As seen from the precision-recall plot above, the curve sticks to the top-right hand corner. This means that the model has both high precision and high recall levels at the same time. This means that the model is performing extremely well because there usually exists a trade-off between precision and recall at varied thresholds. Then, the large area under this curve means that the YOLOv8 model used has a high average precision with false positives minimised. 
 
