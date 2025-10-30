@@ -96,7 +96,7 @@ In the precision-confidence curve above, the model's precision increases as conf
 
 ![alt text](pics_for_readme/BoxR_curve.png)
 
-Lastly, in the recall-confidence curve above, the model's recall only starts to decrease near a confidence level of over 0.9. This ties it all together and shows that the YOLOv8 model is indeed performing extremely well in detecting lesions as there usually exists a trade-off between a model's level of recall and confidence. 
+Lastly, in the recall-confidence curve above, the model's recall values are extremely high across varied confidence thresholds. As seen in the plot above, the model's recall only starts to decrease near a confidence level of over 0.9. This ties it all together and shows that the YOLOv8 model is indeed performing extremely well in detecting lesions as there usually exists a trade-off between a model's level of recall and confidence. 
 
 Next, the pictures presented below show the validation batch labels and the validation batch predictions respectively. It can be seen that both show the exact same bounding boxes in the same positions. This means that the YOLOv8 model's predictions perfectly match the labeled images, which is consistent with the rest of our findings thus far.
 
