@@ -16,7 +16,7 @@ In a YOLO model, the input image is passed through the CNN which is also known a
 
 The figure below presents a simple diagram of YOLOv8's architecture and algorithm.
 
-![alt text](pics_for_readme/yolov8_diagram.JPG)
+![YOLOv8 Simplified Architecture Diagram](pics_for_readme/yolov8_diagram.JPG)
 ---
 
 ## Data Pre-processing
