@@ -94,7 +94,7 @@ As seen from the precision-recall plot above, the curve sticks to the top-right 
 
 F1-confidence plots work best for identifying the optimal confidence threshold where a model's level of precision and recall are well-balanced. In our context, as seen in the plot above, the YOLOv8 model well maintains a very good balance between levels of precision and recall. The F1 score remains high across various thresholds. Only over a confidence level of 0.9 does the model's recall begin to drop and so does the F1 score. Overall, this means that the YOLOv8 model is performing well.
 
-![alt text](pics_for_readme/BoxP_curve.png)
+![Precision-Confidence Plot](pics_for_readme/BoxP_curve.png)
 
 In the precision-confidence curve above, the model's precision increases as confidence increases. The model's precision values remain extremely high (close or equal to 1.0) at all different thresholds. This means that the YOLOv8 model performs exceptionally well at avoiding false positives.
 
