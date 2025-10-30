@@ -120,8 +120,8 @@ For the sake of this report, the following examples will show single input image
 
 The following shows an example input image fed into the trained YOLOv8 model, along with the predicted output made by the model.
 
-![alt text](pics_for_readme/ISIC_0015485_copy.jpg)
-![alt text](pics_for_readme/ISIC_0015485.jpg)
+![Example Input Image 1](pics_for_readme/ISIC_0015485_copy.jpg)
+![Corresponding Output Image 1](pics_for_readme/ISIC_0015485.jpg)
 
 In addition, the following results were printed in the terminal console after running predict.py:
 
