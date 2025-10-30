@@ -130,6 +130,19 @@ This means that the already trained YOLOv8 model detected a lesion in the input 
 
 The following shows another example input image fed into the same trained YOLOv8 model, along with the predicted output made by the model.
 
+![alt text](pics_for_readme/ISIC_0015963 copy.jpg)
+![alt text](pics_for_readme/ISIC_0015963.jpg)
+
+The following results were printed in the terminal console after running predict.py:
+
+        class: lesion
+        confidence: 0.99
+        box: [0.0, 4.3296051025390625, 3872.0, 2590.019775390625]
+        done predicting
+
+This means that the already trained YOLOv8 model detected a lesion in the input image with a confidence of 99%, with the bounding box coordinates for where the lesion was found in the input image given by [0.0, 4.3296, 3872.0, 2590.0].
+
+From these two example inputs and outputs, the trained YOLOv8 predicted a lesion correctly and with a high confidence of 99%. This means that the model is very capable in detecting features that indicate the existence of a lesion. There is thus, highly reliable feature extraction together with a very high model accuracy. These example inputs and outputs align with the rest of the findings of the YOLOv8 model. It can be concluded that the YOLOv8 model is highly accurate in detecting lesions in images, effectively minimising both false negatives as well as false positives. 
 
 
 
