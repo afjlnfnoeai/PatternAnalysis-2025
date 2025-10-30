@@ -71,4 +71,4 @@ if __name__ == "__main__":
     model = load_latest_model()
 
     # can choose to predict single image or a whole folder, uty, just change source_path arg
-    predict_image(model, "/Users/suyi/Desktop/3710/ISIC-2017/test/images/ISIC_0012904.jpg")
+    predict_image(model, "/Users/suyi/Desktop/3710/ISIC-2017/test/images/ISIC_0015963.jpg")
