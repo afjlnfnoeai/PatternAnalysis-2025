@@ -18,7 +18,7 @@ def test_driver():
                         imgsz=640,
                         batch=8,
                         verbose=True,
-                        iou=0.8)
+                        iou=0.8)  # min IoU >= 0.8 as per assignment question
 
     print(results)
 
