@@ -104,7 +104,7 @@ Lastly, in the recall-confidence curve above, the model's recall values are extr
 
 Next, the pictures presented below show the validation batch labels and the validation batch predictions respectively. YOLO validation batch labels depict the ground truth labels for distinct batches from the validation split. On the other hand, YOLO validation batch predictions display the predictions made by the model for those same batches. It can be seen that both show the exact same bounding boxes in the same positions. This means that the YOLOv8 model's predictions perfectly match the labeled images, which is consistent with the rest of our findings thus far.
 
-![alt text](pics_for_readme/val_batch0_labels.jpg)
+![Validation Batch Labels](pics_for_readme/val_batch0_labels.jpg)
 
 ![alt text](pics_for_readme/val_batch0_pred.jpg)
 
