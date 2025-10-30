@@ -2,6 +2,10 @@
 
 ---
 
+Name: Su Yi Tong
+
+Student Number: 47609994
+
 ## Overview of Algorithm
 
 ### Description of Algorithm
