@@ -98,7 +98,7 @@ F1-confidence plots work best for identifying the optimal confidence threshold w
 
 In the precision-confidence curve above, the model's precision increases as confidence increases. The model's precision values remain extremely high (close or equal to 1.0) at all different thresholds. This means that the YOLOv8 model performs exceptionally well at avoiding false positives.
 
-![alt text](pics_for_readme/BoxR_curve.png)
+![Recall-Confidence Plot](pics_for_readme/BoxR_curve.png)
 
 Lastly, in the recall-confidence curve above, the model's recall values are extremely high across varied confidence thresholds. As seen in the plot above, the model's recall only starts to decrease near a confidence level of over 0.9. This ties it all together and shows that the YOLOv8 model is indeed performing extremely well in detecting lesions as there usually exists a trade-off between a model's level of recall and confidence. 
 
